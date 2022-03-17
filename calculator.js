@@ -86,9 +86,6 @@ const btnAc = document.querySelector('.btn-ac');
 btnAc.addEventListener('mouseup', e => {
     clear();
 });
-btnAc.addEventListener('touchend', e => {
-    clear();
-});
 
 
 // Backspace event handler
@@ -96,9 +93,7 @@ const btnBackspace = document.querySelector('.btn-backspace');
 btnBackspace.addEventListener('mouseup', e => {
     backspaceEventHandler();
 });
-btnBackspace.addEventListener('touchend', e => {
-    backspaceEventHandler();
-});
+
 const backspaceEventHandler = () => {
     if(displayDiv2.textContent == '0'){
         clear();
@@ -142,10 +137,6 @@ opBtns.forEach(button => button.addEventListener('mouseup', e =>{
     displayDiv2.style.fontSize = '22px';
     opEventHandler(button.value);
 }));
-opBtns.forEach(button => button.addEventListener('touchend', e =>{
-    displayDiv2.style.fontSize = '22px';
-    opEventHandler(button.value);
-}));
 const opEventHandler = (value) => {
     if(keyboardInputs.operators.indexOf(value) == -1) return;
     if((value1 !== 0 && value1 !== undefined && value1 !== '') && operator !== '' && (value2 !== 0 && value2 !== undefined && value2 !== '')){
@@ -166,10 +157,6 @@ const opEventHandler = (value) => {
 // Numeric buttons event handler
 const btns = document.querySelectorAll('.numBtn');
 btns.forEach(button => button.addEventListener('mouseup', e =>{
-    displayDiv2.style.fontSize = '22px';
-    numbersEventHandler(button.value);
-}));
-btns.forEach(button => button.addEventListener('touchend', e =>{
     displayDiv2.style.fontSize = '22px';
     numbersEventHandler(button.value);
 }));
@@ -236,7 +223,6 @@ const numbersEventHandler = (value) => {
 // Equal event handler
 const btnEqual = document.querySelector('.btn-equal');
 btnEqual.addEventListener('mouseup', e => equalEventHandler());
-btnEqual.addEventListener('touchend', e => equalEventHandler())
 const equalEventHandler = () => {  
     if((value1 !== 0 && value1 !== undefined) && (value2 !== 0 && value2 !== undefined) && operator !== ''){
         operate(Number(value1), operator, Number(value2));
