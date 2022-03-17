@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body{
+    background-color: rgb(255, 187, 0);
+}
+
+.calc-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.calc-background{
+    background-color: rgb(83, 83, 83);
+    border-radius: 2px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 260px;
+    height: 378px;
+    margin-top: 40px;
+    padding: 3px;
+}
+
+.display{
+    background-color: rgb(39, 39, 41);
+    margin-top: 4px;
+    border: 1px solid rgb(145, 145, 145);
+    font-family: 'Orbitron';
+}
+
+.display-divs{
+    background-color: rgb(39, 39, 41);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: rgba(19, 245, 49, 0.514);
+    width: 94%;
+    height: 86%;
+}
+
+.display1, .display2{
+    height: 52px;
+    display: flex;
+    padding-top: 12px;
+    font-size: 22px;
+    word-break: break-all;
+}
+
+.display1{
+    font-size: 17px;
+}
+
+.btns-grid{
+    display: flex;
+    flex-direction: column;   
+}
+
+.btn-row-1, .btn-row-2, .btn-row-3, .btn-row-4, .btn-row-5{
+    display: flex;
+}
+
+.btn-ac, .btn-backspace, #btn-percentage, #btn-divide, #btn-7, #btn-8, #btn-9, #btn-multiply, #btn-4, #btn-5, #btn-6, #btn-subtract, #btn-1, #btn-2, #btn-3, #btn-add, #btn-dot, #btn-0{
+    width: 64px;
+    height: 50px;
+    font-size: 20px;
+    border-style: groove;
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+.backspace-img{
+    height: 15px;
+}
+
+.btn-equal{
+    width: 128px;
+    height: 50px;
+    font-size: 26px;
+    font-weight: 700;
+    border-style: groove;
+    background-color: rgb(255, 108, 0);
+}
+
+.btn-ac, .btn-backspace, #btn-percentage, #btn-divide, #btn-multiply, #btn-subtract{
+    color: rgb(255, 108, 0);
+    background-color: rgb(63, 63, 63);
+    font-size: 28px;
+}
+
+
+#btn-add{
+    color: rgb(255, 108, 0);
+    background-color: rgb(63, 63, 63);
+}
+
+#btn-dot, .btn-ac, .btn-backspace, #btn-percentage{ 
+    font-size: 18px;
+}
+
+.btn-ac{
+    font-size: 16px;
+}
+
+#btn-7:hover, #btn-8:hover, #btn-9:hover, #btn-4:hover, #btn-5:hover, #btn-6:hover, #btn-1:hover, #btn-2:hover, #btn-3:hover, #btn-dot:hover, #btn-0:hover{
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+
+.btn-ac:hover, .btn-backspace:hover, #btn-percentage:hover, #btn-divide:hover, #btn-multiply:hover, #btn-subtract:hover, #btn-add:hover{
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+.btn-equal:hover{
+    background-color: rgb(216, 79, 0);
+    color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.btn-ac, #btn-1, #btn-2, #btn-3, #btn-4, #btn-5, #btn-6, #btn-7, #btn-8, #btn-9, #btn-0, .btn-equal{
+    font-family: 'Orbitron';
+}
+
+footer{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    font-family: 'Orbitron';
+}
+
+.cpSymbol{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.btnGithub{
+    border-style: none;
+    background-color: rgb(255, 187, 0);
+    transition: 0.28s ease-in-out;
+}
+
+.githublogo{
+    width: 22px;
+}
+
+.footerSpaceDiv{
+    height: 360px;
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btnGithub:hover{
+    transform: rotate(360deg) scale(1.1);
+    cursor: pointer;
+}
